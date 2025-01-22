@@ -1,0 +1,102 @@
+/* Navbar Styling */
+.navbar {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444; /* Dark gray background */
+    padding: 10px 20px;
+}
+
+.navbar .brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ffcc00; /* Yellow text */
+}
+
+.navbar .brand img {
+    height: 40px;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar a {
+    color: #ffcc00; /* Yellow text */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #666; /* Lighter gray background */
+    text-decoration: underline; /* Underline effect */
+    border-bottom: 2px solid #ffcc00; /* Yellow underline */
+}
+
+/* Hamburger Menu for Mobile */
+.menu {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 4px; /* Thicker bars */
+    background-color: #ffcc00; /* Yellow bars */
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .menu-checkbox:checked ~ .menu {
+        display: flex;
+    }
+
+    .menu a {
+        text-align: center;
+        padding: 15px;
+        font-size: 1.2rem; /* Larger text */
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+input[type="submit"] {
+    background: linear-gradient(45deg, #ff7eb3, #ffcc00);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(45deg, #ffcc00, #ff7eb3);
+    transform: scale(1.1); /* Slightly enlarges on hover */
+}

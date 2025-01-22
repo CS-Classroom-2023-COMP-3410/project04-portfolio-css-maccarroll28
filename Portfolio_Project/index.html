@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Mac's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Simulating a background image -->
+    <img src="images/goat.jpg" alt="Background Image" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;">
+
+    <!-- Center content using a table -->
+    <table style="width: 100%; height: 100%; text-align: center; position: relative; z-index: 1;">
+        <tr>
+            <td>
+                <header>
+                    <h1 style="font-size: 3rem;">Welcome to Mac's Portfolio</h1>
+                    <p style="font-size: 1.5rem;">Hi, I'm Mac Carroll, a Computer Science major at the University of Denver!</p>
+                </header>
+                <footer>
+                    <nav class="navbar" id="navbar">
+                        <div class="brand" id="brand-logo">Mac's Portfolio</div>
+                        <label for="menu" class="menu-toggle" id="menu-toggle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </label>
+                        <input type="checkbox" id="menu" class="menu-checkbox" style="display: none;">
+                        <div class="menu" id="menu-options">
+                            <a href="aboutME/index.html" id="menu-about">About</a>
+                            <a href="projects/index.html" id="menu-services">Projects</a>
+                            <a href="contactME/index.html" id="menu-contact">Contact</a>
+                            <a href="gallery/index.html" id="menu-gallery">Gallery</a>
+                        </div>
+                    </nav>                                        
+                    <p style="font-size: 1rem;">© Mac Carroll, 2025</p>
+                </footer>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
